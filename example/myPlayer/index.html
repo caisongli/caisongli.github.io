@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LCS-player</title>
+  <link rel="stylesheet" href="//at.alicdn.com/t/c/font_3322649_ca0b7eo29gl.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="components">
+
+      <div class="switch">
+        <div class="switch__1">
+          <input id="switch-1" type="checkbox">
+          <label for="switch-1"></label>
+        </div>
+
+        <div class="switch__2">
+          <input id="switch-2" type="checkbox" checked>
+          <label for="switch-2"></label>
+        </div>
+      </div>
+
+      <div class="checkbox">
+        <div class="checkbox__1">
+          <input id="checkbox-1" type="checkbox">
+          <label for="checkbox-1">
+            <i class="material-icons iconfont icon-shoucang"></i></label>
+        </div>
+        <div class="checkbox__2">
+          <input id="checkbox-2" type="checkbox" checked>
+          <label for="checkbox-2">
+            <i class="iconfont icon-yanchurili material-icons ">
+            </i></label>
+        </div>
+      </div>
+
+      <div class="radio">
+        <div class="radio__1">
+          <input id="radio-1" type="radio" name="radio" value="1">
+          <label for="radio-1"></label>
+        </div>
+
+        <div class="radio__2">
+          <input id="radio-2" type="radio" name="radio" value="2" checked>
+          <label for="radio-2"></label>
+        </div>
+      </div>
+
+      <div class="btn btn__primary">
+        <p>切歌</p>
+      </div>
+      <div class="btn btn__secondary">
+        <p>重放</p>
+      </div>
+
+      <div class="clock">
+        <div class="hand hours"></div>
+        <div class="hand minutes"></div>
+        <div class="hand seconds"></div>
+        <div class="point"></div>
+        <div class="marker">
+          <span class="marker__1"></span>
+          <span class="marker__2"></span>
+          <span class="marker__3"></span>
+          <span class="marker__4"></span>
+        </div>
+      </div>
+
+      <div class="chip">
+        <div class="chip__icon">
+          <ion-icon name="color-palette"></ion-icon>
+        </div>
+        <p class="nowDate">梦里花</p>
+        <div class="chip__close">
+          <ion-icon name="close"></ion-icon>
+        </div>
+      </div>
+
+      <div class="circle">
+        <span class="circle__btn">
+          <!-- <ion-icon class="pause" name="pause"></ion-icon> -->
+          <svg xmlns="http://www.w3.org/2000/svg" class="ionicon s-ion-icon pause" viewBox="0 0 512 512">
+            <defs>
+              <style>
+                .cls-1,
+                .cls-2 {
+                  fill: #6d5dfc;
+                }
+              </style>
+            </defs>
+            <path class="cls-1"
+              d="M208 432h-48a16 16 0 01-16-16V96a16 16 0 0116-16h48a16 16 0 0116 16v320a16 16 0 01-16 16zM352 432h-48a16 16 0 01-16-16V96a16 16 0 0116-16h48a16 16 0 0116 16v320a16 16 0 01-16 16z">
+            </path>
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" class="ionicon s-ion-icon play" viewBox="0 0 512 512">
+            <path class="cls-2 pause"
+              d="M133 440a35.37 35.37 0 01-17.5-4.67c-12-6.8-19.46-20-19.46-34.33V111c0-14.37 7.46-27.53 19.46-34.33a35.13 35.13 0 0135.77.45l247.85 148.36a36 36 0 010 61l-247.89 148.4A35.5 35.5 0 01133 440z">
+            </path>
+          </svg>
+        </span>
+        <span class="circle__back-1"></span>
+        <span class="circle__back-2"></span>
+      </div>
+
+      <div class="form">
+        <input type="text" class="form__input" placeholder="Type anything...">
+      </div>
+
+      <div class="search">
+        <input type="text" class="search__input" placeholder="Search...">
+        <div class="search__icon">
+          <ion-icon name="search"></ion-icon>
+        </div>
+      </div>
+
+      <div class="segmented-control">
+
+        <input type="radio" name="radio2" value="3" id="tab-1" checked />
+        <label for="tab-1" class="segmented-control__1">
+          <p>上一首</p>
+        </label>
+
+        <input type="radio" name="radio2" value="4" id="tab-2" />
+        <label for="tab-2" class="segmented-control__2">
+          <p>暂停</p>
+        </label>
+
+        <input type="radio" name="radio2" value="5" id="tab-3" />
+        <label for="tab-3" class="segmented-control__3">
+          <p>下一首</p>
+        </label>
+
+        <div class="segmented-control__color"></div>
+      </div>
+
+      <div class="icon">
+        <div class="icon__home">
+          <i class="iconfont icon-shouye"></i>
+        </div>
+        <div class="icon__account">
+          <i class="iconfont icon-zhaoxiangji"></i>
+        </div>
+        <div class="icon__settings">
+          <a class="iconfont icon-sousuo" href="../christmas-tree.html"></a>
+        </div>
+      </div>
+
+      <div class="slider">
+        <div class="slider__box">
+          <span class="slider__btn" id="find"></span>
+          <span class="slider__color"></span>
+          <span class="slider__tooltip">50%</span>
+        </div>
+      </div>
+    </div>
+    <div class="aplayer-lrc">
+      <ul id="lrclist" class="aplayer-lrc-contents" style="transform: translateY(0px);"><!-- 保证歌词在正中间 -->
+      </ul>
+    </div>
+  </div>
+  <audio
+    src="https://dl.stream.qqmusic.qq.com/M500003NhXRd1tWQKY.mp3?guid=859192147&vkey=AF571CB57161C6CD6F9F9A0C10AA75B80DA15D9CBEB939E7EFDB67DD0B77FC0AA5B9A9F6CC617E2873599BE74A14EDA0F4CCCD46E8D8D9CD&uin=&fromtag=120042"
+    id="audio" autoplay="true" preload="metadata">
+  </audio>
+  <button class="btns" id="fullscr">进入全屏</button>
+</body>
+<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.2/jquery.js"></script>
+<script src="./demo.js"></script>
+</html>
